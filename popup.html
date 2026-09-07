@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Щогодинний сигнал</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>Щогодинний сигнал</h1>
+
+  <label class="row">
+    <input type="checkbox" id="enabled" />
+    Увімкнено
+  </label>
+
+  <label class="field">
+    Звук
+    <select id="sound"></select>
+  </label>
+
+  <label class="field">
+    Гучність
+    <input type="range" id="volume" min="0" max="100" step="1" />
+  </label>
+
+  <button id="test">Перевірити звук</button>
+
+  <p id="status" class="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
